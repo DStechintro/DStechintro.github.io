@@ -1,31 +1,54 @@
 body{
-  padding: 25px;
-  background-color = blue;
-  font-size: 30px;
-  margin-right: 100px;
+  padding: 50px;
+  margin-right: 20px;
+  background-color = "blue";
   text-align: center;
-  background-image: url('https://media1.ledevoir.com/image/836932.jpg?ts=1738141235');
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRKsbYX_f0kXUuvFX-WoeXXahiZd_1aQqlQg&s");
   color: white;
+  font-style: normal;
 }
 
 h1{
   font-family: "Times New Roman", times, serif;
   text-align: center;
-  margin-right: 100px;
+  margin-right: 0px;
+  margin-left: 0px;
   margin-top: 30px;
+  margin-bottom: 0px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
 }
 
 h2 {
   font-family: "Times New Roman", times, serif;
   text-align: center;
-  margin-right: 100px;
-  margin-top: 15px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  font-style: normal;
 }
+
 p {
   font-family: "Times New Roman", times, serif;
   text-align: center;
-  margin-right: 100px
+  margin-right: 0px;
+  margin-left: 0px;
   margin-top: 15px;
+  margin-bottom: 0px;
+  font-style: normal;
+}
+
+a {
+  font-family: "Times New Roman", times, serif;
+  text-align: center;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  font-style: normal;
+  color: yellow;
 }
 
 .title {
