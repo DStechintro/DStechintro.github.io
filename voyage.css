@@ -80,8 +80,7 @@ a {
 
 /* Style the buttons inside the tab */
 .tab button {
-  background-color: inherit;
-  color: blue;
+  background-color: blue;
   float: center;
   border: 1;
   outline: none;
