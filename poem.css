@@ -56,19 +56,20 @@ a {
 
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  border: none;
+  background-color: rgb();
 }
 
 /* Style the buttons inside the tab */
 .tab button {
-  background-color: inherit;
-  float: left;
+  background-color: rgb(206,63,221);
+  float: center;
   border: none;
+  border-radius: 12px;
   outline: none;
   cursor: pointer;
-  padding: 14px 56px;
-  transition: 0.3s;
+  padding: 10px 10px;
+  transition: 1s;
   font-size: 17px;
 }
 
