@@ -80,13 +80,13 @@ a {
 
 /* Style the buttons inside the tab */
 .tab button {
-  background-color: blue;
+  background-color: inherit;
   float: center;
   border: 1;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
-  transition: 0.3s;
+  transition: 1s;
   font-size: 17px;
 }
 
