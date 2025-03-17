@@ -82,7 +82,7 @@ a {
 .tab button {
   background-color: inherit;
   float: center;
-  border: none;
+  border: 1;
   outline: none;
   cursor: pointer;
   padding: 14px 56px;
