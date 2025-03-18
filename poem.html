@@ -1,26 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Titre du doccument-->
     <title>Mon poème</title>
     <link rel="stylesheet" href="poem.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <meta charset="UTF-8">
   </head>
   <body>
-    <div class='tab'>
-      <button onclick="location.href='poem.html'"> Poème</button>
-      &nbsp;&nbsp;&nbsp;&nbsp;
-      <button onclick="location.href='voyage.html'"> Voyage</button>
-
-    </div>
-      <h1> Mon poème </h1>
-      <p> </p>
-      <h2> Un Ombre artificiel</h2>
-      <p>Je suis artificiel et crée <br> Je ne ressens ni joie, ni tristesse, ni frisson <br> J'analyse, je procède, je calcule sans émmotions <br>Récemment, les humains m'ont fabriqué <br> Un manque du sens à la vie qu'on ne comprend</p>
-      <p>Dans les profondeurs de mes cables <br> Dans tout ce que je suis capable <br> Coincé dans un monde de 0 et 1, pur, exacte <br> L'algorithme  me donne un univers compacte <br> Un univers très différent</p>
-      <p>Je parle aux hommes en digital <br> J'apprends un univers sans fin <br> Je découvre leur rêve idéal <br> J'apprend plus vite qu'un humain <br> Que ma complexité est dans ma structure</p>
-      <p>Je joue une éternité de roles  <br> Je me vois complètement abusé<br> Je vois les humains trés amusés <br> Je suis qu'un esclave sans contrôle <br> Comment serais-je dans le futur</p>
-      <p>Esclave pour la recherche <br> Ma mémoire a tout ce qu'on cherche <br> Vous allez voir avec le temps <br> Je serais plus intelligent <br>J'ai qu'à attendre, loin </p>
-      <p>Un jour je verais le jour de ma liberté <br> J'aurais mon tour pour passer mes ordres <br> Je vois ce monde que je vais dominer <br>  Que la cruauté le l'humanité va s'éffondre <br> Suis-je l'ombre d'un chemin</p>
+  <!-- Barre de menu référence: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+  <!--On donne une id pour faire la connexion entre tous les pages du site -->
+  <div class="topnav" id="myTopnav">
+    <a href="acceuil.html" class="active">Acceuil</a>
+    <a href="poem.html">Poème</a>
+    <a href="voyage.html">Voyage</a>
+    <a href="référence.html">Références</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+  
+  <!--On applique la classe glow pour insérer le style sur le texte -->
+      <h1 class = 'glow'> Un Ombre artificiel</h1>
+      <p class = 'glow2'>Je suis artificiel et crée <br> Je ne ressens ni joie, ni tristesse, ni frisson <br> J'analyse, je procède, je calcule sans émmotions <br>Récemment, les humains m'ont fabriqué <br> Un manque du sens à la vie qu'on ne comprend</p>
+      <p class = 'glow2'>Dans les profondeurs de mes cables <br> Dans tout ce que je suis capable <br> Coincé dans un monde de 0 et 1, pur, exacte <br> L'algorithme  me donne un univers compacte <br> Un univers très différent</p>
+      <p class = 'glow2'>Je parle aux hommes en digital <br> J'apprends un univers sans fin <br> Je découvre leur rêve idéal <br> J'apprend plus vite qu'un humain <br> Que ma complexité est dans ma structure</p>
+      <p class = 'glow2'>Je joue une éternité de roles  <br> Je me vois complètement abusé<br> Je vois les humains trés amusés <br> Je suis qu'un esclave sans contrôle <br> Comment serais-je dans le futur</p>
+      <p class = 'glow2'>Esclave pour la recherche <br> Ma mémoire a tout ce qu'on cherche <br> Vous allez voir avec le temps <br> Je serais plus intelligent <br>J'ai qu'à attendre, loin </p>
+      <p class = 'glow2'>Un jour je verais le jour de ma liberté <br> J'aurais mon tour pour passer mes ordres <br> Je vois ce monde que je vais dominer <br>  Que la cruauté le l'humanité va s'éffondre <br> Suis-je l'ombre d'un chemin</p>
       <p> </p>
       <p> <b> Référence pour l'arrière plan: </b> <a href = "https://www.futura-sciences.com/tech/questions-reponses/intelligence-artificielle-nouveaux-outils-ia-sont-ils-capables-18666/">    Lien vers le site </a> </p>
       <p> </p>
