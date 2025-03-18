@@ -1,95 +1,52 @@
-/* On attribue des caractéristiques pour tous les éléments sur la page */
-body{
-  padding: 50px;
-  margin-right: 20px;
-  background-image: url("https://t4.ftcdn.net/jpg/04/14/72/17/360_F_414721771_huN3nSf3RttcieMIngSdmRkESbYP1AKZ.jpg");
-  background-size: 100%;
-  text-align: center;
-  font-style: normal;
-}
- 
-/* On attribue une couleur jaune pour tout le texte qui est dans une balise p */
-p{
- color: yellow; 
-}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page d'acceuil</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+  </head>
 
-/* On attribue la couleur jaune au titre h2*/
-h2 {
-  color: yellow;
-}
-
-/* Aucune attribution de caractéristiques sur title. */
-.title {
-}
-
-/*Référence: https://www.w3schools.com/howto/howto_css_glowing_text.asp*/
-/* On définit des caractéristiques pour glow */
-.glow {
-  font-size: 80px;
-  color: red;
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
-}
-
-/* Référence: https://www.w3schools.com/howto/howto_js_topnav.asp */
-.topnav {
-    background-color: #333;
-    overflow: hidden;
-  }
+  <body> 
+  <!--Dans cet endroit, on définit le barre de menu. On crée des connexions à travers d'autres pages -->
+  <!-- Barre de menu référence: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+  <div class="topnav" id="myTopnav">
+    <a href="acceuil.html" class="active">Acceuil</a> <!-- Référence pour Acceuil-->
+    <a href="poem.html">Poème</a> <!-- Référence pour Poème-->
+    <a href="voyage.html">Voyage</a> <!-- Référence pour voyage-->
+    <a href="référence.html">Références</a> <!-- Référence pour Références-->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
   
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
-  .topnav .icon {
-    display: none;
-  }
-
- @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
     }
   }
   
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
+  </script>
+  <h1 class = 'glow2'> Page d'Acceuil</h1> <!--On applique un effet de glow pour donner du style au texte-->
+    <div class="row">
+      <div class="column"> <!--On donne une table de matières au site web et on donne des références aux immages utilisés -->
+        <p> <b class = 'glow'> Poème</b> <br> <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOPESe0igKdDs3lYNrlcE2sLnNBVX9PatJeQ&s" alt="Immage de l'acceuil de poème" style="width:100%"> <br> <b> référence: </b><a href = "https://www.istockphoto.com/photos/old-books-and-pen" target="_self"> <i>Lien vers le site</i> </a> <br> Le poème parle d'un robot qui désire avoir sa vengence contre l'humainité en même temps de douter s'il est l'ombre d'un chemnin.</p>
+      </div>
+      <div class="column">
+        <p> <b class = 'glow'>Voyage </b> <br> <img  src="https://soinssantegc.com/wp-content/uploads/2017/02/Voyage_Avion_Conseils_Quebec-1.jpg" alt="Immage de l'acceuil du voyage parfait" style="width:100%"> <br> <b> référence: </b><a href = "https://soinssantegc.com/conseils-voyage-avion/" target="_self"> <i>Lien vers le site</i> </a> <br> Le page de voyage donne les information sur les sites intéressantes à voir à Paris ainsi que les mets populaires.  </p>
+      </div>
+      <div class="column">
+        <p> <b class = 'glow'> Références</b> <img src="https://media.istockphoto.com/id/619768250/photo/ink-pot-quill-and-antique-books.jpg?s=612x612&w=0&k=20&c=P4x1bMqZGEHjW_jFTeKSFkckx5OvC_X7-UvwH5MRWUY=" style="width:100%"> <br> <b> référence: </b> <a href = "https://www.istockphoto.com/photos/old-book-with-quill-pen" target="_self"> <i>Lien vers le site</i> </a> <br> Cette page contient tous les références que l'auteur a utilisé pour créer le site web.</p>
+      </div>
+    </div>
+
+    <ul>
+
+  </body>  
+</html>
+     
+   
