@@ -1,4 +1,51 @@
-# DStechintro_github.io
-Bienvenue à ma page web
-<a href="poem.html">LIEN VERS LE POÈME</a>
-<a href ="voyage.html">Lien vers le voyage</a>                                        
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page d'acceuil</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+  </head>
+
+  <body> 
+  <!--Dans cet endroit, on définit le barre de menu. On crée des connexions à travers d'autres pages -->
+  <!-- Barre de menu référence: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp-->
+  <div class="topnav" id="myTopnav">
+    <a href="acceuil.html" class="active">Acceuil</a> <!-- Référence pour Acceuil-->
+    <a href="poem.html">Poème</a> <!-- Référence pour Poème-->
+    <a href="voyage.html">Voyage</a> <!-- Référence pour voyage-->
+    <a href="référence.html">Références</a> <!-- Référence pour Références-->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  
+  </script>
+  <h1 class = 'glow2'> Page d'Acceuil</h1> <!--On applique un effet de glow pour donner du style au texte-->
+    <div class="row">
+      <div class="column"> <!--On donne une table de matières au site web et on donne des références aux immages utilisés -->
+        <p> <b class = 'glow'> Poème</b> <br> <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOPESe0igKdDs3lYNrlcE2sLnNBVX9PatJeQ&s" alt="Immage de l'acceuil de poème" style="width:100%"> <br> <b> référence: </b><a href = "https://www.istockphoto.com/photos/old-books-and-pen" target="_self"> <i>Lien vers le site</i> </a> <br> Le poème parle d'un robot qui désire avoir sa vengence contre l'humainité en même temps de douter s'il est l'ombre d'un chemnin.</p>
+      </div>
+      <div class="column">
+        <p> <b class = 'glow'>Voyage </b> <br> <img  src="https://soinssantegc.com/wp-content/uploads/2017/02/Voyage_Avion_Conseils_Quebec-1.jpg" alt="Immage de l'acceuil du voyage parfait" style="width:100%"> <br> <b> référence: </b><a href = "https://soinssantegc.com/conseils-voyage-avion/" target="_self"> <i>Lien vers le site</i> </a> <br> Le page de voyage donne les information sur les sites intéressantes à voir à Paris ainsi que les mets populaires.  </p>
+      </div>
+      <div class="column">
+        <p> <b class = 'glow'> Références</b> <img src="https://media.istockphoto.com/id/619768250/photo/ink-pot-quill-and-antique-books.jpg?s=612x612&w=0&k=20&c=P4x1bMqZGEHjW_jFTeKSFkckx5OvC_X7-UvwH5MRWUY=" style="width:100%"> <br> <b> référence: </b> <a href = "https://www.istockphoto.com/photos/old-book-with-quill-pen" target="_self"> <i>Lien vers le site</i> </a> <br> Cette page contient tous les références que l'auteur a utilisé pour créer le site web.</p>
+      </div>
+    </div>
+
+    <ul>
+
+  </body>  
+</html>
+     
