@@ -7,6 +7,7 @@ body{
   background-image: url("https://i.pinimg.com/736x/a7/5b/5a/a75b5ad188176b532c3be6f8f35f4291.jpg");
 }
  
+  /*On définit les paramètres de h1 (le grand titre)*/
 h1{
   font-family: "Times New Roman", times, serif;
   text-align: center;
@@ -17,10 +18,10 @@ h1{
   font-style: normal;
   font-weight: bold;
   font-size: 50px;  
-  /*background-image: url("https://media.tacdn.com/media/attractions-splice-spp-674x446/12/2e/16/f8.jpg");*/
   color: red;
 }
 
+  /*On définit les paramètres de h2 (le deuxième plus grand titre)*/
 h2 {
   font-family: "Times New Roman", times, serif;
   text-align: center;
@@ -32,6 +33,7 @@ h2 {
   font-size: 30px;
 }
 
+  /*On définit les paramètres de h3 (le troisième plus grand titre)*/
 h3 {
   font-family: "Times New Roman", times, serif;
   text-align: center;
@@ -45,7 +47,7 @@ h3 {
 }
 
 
-
+  /*On définit les paramètres des balises p (paragraphes))*/
 p {
   font-family: "Times New Roman", times, serif;
   text-align: center;
@@ -58,6 +60,7 @@ p {
   color: white;
 }
 
+/*On ajoute du css aux cellules des tableaux. On accord du css spécifique pour td et pour tr.*/
 td {
   font-family: "Times New Roman", times, serif;
   text-align: center;
@@ -82,6 +85,7 @@ tr {
   color: white;
 }
 
+  /*On définit les paramètres de la balise a. On fait le formattage des liens*/
 a {
   font-family: "Times New Roman", times, serif;
   text-align: center;
@@ -199,6 +203,5 @@ img:hover {
 .tab button.active {
   background-color: #ccc;
 }
-
 
 
