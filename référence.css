@@ -12,6 +12,9 @@ body{
 p{
  color: yellow; 
 }
+a {
+  color: yellow;
+}
 
 /* On attribue la couleur jaune au titre h2*/
 h2 {
